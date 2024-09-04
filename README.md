@@ -1,38 +1,37 @@
 # VBA-Challenge
 This code was written to get the desired outcome for the VBA Challenge in Module 2.
 ## Declarations
-The code begins with declaring our variables and its data types. For example:
-![image](https://github.com/user-attachments/assets/fd73bf59-a46d-4802-99de-20cab23a4c0c)
-Sub ModTwoSolution()
-    Dim ws As Worksheet # To make sure the code works on entire worksheet
-    Dim lastRow As Long
-    Dim searchRange As Range
-    Dim searchCell As Range
-    Dim uniqueStrings As Collection
-    Dim sortedStrings() As String
-    Dim i As Long
-    Dim sumF As Double
-    Dim sumC As Double
-    Dim sumG As Double
-    Dim diff As Double
-    Dim percentage As Double
-    Dim outputRow As Long
-    Dim firstValueC As Double
-    Dim firstOccurrence As Boolean
-    Dim LastOccurrenceC As Double
-    Dim LastOccurrence As Boolean
-    Dim highestDiff As Double
-    Dim highestDiffString As String
-    Dim lowestDiff As Double
-    Dim lowestDiffString As String
-    Dim highestvol As Double
-    Dim highestvolString As String
-    Dim originalDate As String
-    Dim yearPart As Integer
-    Dim monthPart As Integer
-    Dim dayPart As Integer
-    Dim convertedDate As Date
-    
+The code begins with declaring our variables and its data types. <br/><br/>
+    This First Statement (after begining the code) makes sure that the code is compatible with all the worksheets in the workbook. The rest of the variables are declared with appropriate data types to perform the functions within the code efficiently. <br/>
+    Sub ModTwoSolution()<br/>
+    Dim ws As Worksheet<br/>   
+    Dim searchRange As Range<br/>
+    Dim searchCell As Range<br/>
+    Dim uniqueStrings As Collection<br/>
+    Dim sortedStrings() As String<br/>
+    Dim i As Long<br/>
+    Dim sumF As Double<br/>
+    Dim sumC As Double<br/>
+    Dim sumG As Double<br/>
+    Dim diff As Double<br/>
+    Dim percentage As Double<br/>
+    Dim outputRow As Long<br/>
+    Dim firstValueC As Double<br/>
+    Dim firstOccurrence As Boolean<br/>
+    Dim LastOccurrenceC As Double<br/>
+    Dim LastOccurrence As Boolean<br/>
+    Dim highestDiff As Double<br/>
+    Dim highestDiffString As String<br/>
+    Dim lowestDiff As Double<br/>
+    Dim lowestDiffString As String<br/>
+    Dim highestvol As Double<br/>
+    Dim highestvolString As String<br/>
+    Dim originalDate As String<br/>
+    Dim yearPart As Integer<br/>
+    Dim monthPart As Integer<br/>
+    Dim dayPart As Integer<br/>
+    Dim convertedDate As Date<br/>
+   
     ' Initialize the highest/Lowest values
     highestDiff = -1E+308 ' Very low initial value
     highestDiffString = ""
