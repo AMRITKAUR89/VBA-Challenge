@@ -1,7 +1,8 @@
 # VBA-Challenge
 Module 2 Challenge
+# Writing Code for Module 2 Challenge
 Sub ModTwoSolution()
-    Dim ws As Worksheet
+    Dim ws As Worksheet # To make sure the code works on entire worksheet
     Dim lastRow As Long
     Dim searchRange As Range
     Dim searchCell As Range
