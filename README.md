@@ -2,6 +2,7 @@
 This code was written to get the desired outcome for the VBA Challenge in Module 2.
 ## Declarations
 The code begins with declaring our variables and its data types. For example:
+![image](https://github.com/user-attachments/assets/fd73bf59-a46d-4802-99de-20cab23a4c0c)
 Sub ModTwoSolution()
     Dim ws As Worksheet # To make sure the code works on entire worksheet
     Dim lastRow As Long
