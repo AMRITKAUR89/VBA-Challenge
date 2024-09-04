@@ -1,6 +1,7 @@
 # VBA-Challenge
-Module 2 Challenge
-# Writing Code for Module 2 Challenge
+This code was written to get the desired outcome for the VBA Challenge in Module 2.
+## Declarations
+The code begins with declaring our variables and its data types. For example:
 Sub ModTwoSolution()
     Dim ws As Worksheet # To make sure the code works on entire worksheet
     Dim lastRow As Long
