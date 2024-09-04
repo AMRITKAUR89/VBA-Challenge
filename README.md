@@ -234,4 +234,16 @@ Then using the following calculations, the strings at low are incremented and at
     If first < high Then QuickSort arr, first, high
     If low < last Then QuickSort arr, low, last
 End Sub </pre>
+## References
+<pre>https://bootcampspot.instructure.com/courses/6174/external_tools/313</pre>
+<pre> https://stackoverflow.com/questions/26587527/cite-a-paper-using-github-markdown-syntax</pre>
+<pre>https://stackoverflow.com/questions/26587527/cite-a-paper-using-github-markdown-syntax</pre>
+<pre>https://www.youtube.com/watch?v=MCo1UtflJHM</pre>
+<pre>https://www.youtube.com/watch?v=Pm6fApmnOaQ&t=95s</pre>
+<pre>https://www.youtube.com/watch?v=BE45npPXtH8</pre>
+<pre>https://www.testunlimited.com/pdf/an/E5061-90033.pdf</pre>
+<img width="455" alt="image" src="https://github.com/user-attachments/assets/70e88af1-f6ae-42d6-a29e-0724a1bbc2d1">
+<pre>https://openai.com/chatgpt/</pre>
+
+
 
