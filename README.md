@@ -4,7 +4,7 @@ This code was written to get the desired outcome for the VBA Challenge in Module
 The code begins with declaring our variables and its data types. <br/><br/>
     This First Statement (after begining the code) makes sure that the code is compatible with all the worksheets in the workbook. The rest of the variables are declared with appropriate data types to perform the functions within the code efficiently. <br/>
     Sub ModTwoSolution()<br/>
-    Dim ws As Worksheet<br/>   
+    Dim ws As Worksheet  
     Dim searchRange As Range<br/>
     Dim searchCell As Range<br/>
     Dim uniqueStrings As Collection<br/>
@@ -30,23 +30,24 @@ The code begins with declaring our variables and its data types. <br/><br/>
     Dim yearPart As Integer<br/>
     Dim monthPart As Integer<br/>
     Dim dayPart As Integer<br/>
-    Dim convertedDate As Date<br/>
-   
-    ' Initialize the highest/Lowest values
-    highestDiff = -1E+308 ' Very low initial value
-    highestDiffString = ""
-    lowestDiff = 1E+308
-    lowestDiffString = ""
-    highestvol = -1E+308
-    highestvolString = ""
+    Dim convertedDate As Date<br/> 
+## Initialisation 
+ The following set of statemnts are setting the initial values of the Highest Percent Change, the lowest percent Change and the Total Stock Volume. These initialisations will set the value for our variables to the minimum or the maximum value possible, which will help us later in the program to print the final trends on our worksheet.<br/>
+    highestDiff = -1E+308 <br/>
+    highestDiffString = ""<br/>
+    lowestDiff = 1E+308<br/>
+    lowestDiffString = ""<br/>
+    highestvol = -1E+308<br/>
+    highestvolString = ""<br/>
+    Sometimes the values are Initialised within the loops or inside the functions to get the required output. There will be further initialisations as required in this program.<br/>
+## Loops 
+The statement below will loop through each worksheet to make sure our program runs efficiently for this worksheet and then loops back for the next worksheet.<br/>
+    For Each ws In ThisWorkbook.Worksheets<br/>    
+### Format Date and Print in Column B
+Find the Last row using : "lastRow = ws.Cells(ws.Rows.Count, "B").End(xlUp).Row" <br/>
+From row 2 to lastrow: "For i = 2 To lastRow"<br/>
+Set the Variable 'originalDate' value, which will begin with "ws.Cells(2, 2).Value"(B2): "originalDate = ws.Cells(i, 2).Value"
 
-    ' Loop through each worksheet
-    For Each ws In ThisWorkbook.Worksheets
-    
-    ' Convert date strings column B
-        lastRow = ws.Cells(ws.Rows.Count, "B").End(xlUp).Row
-        For i = 2 To lastRow
-            originalDate = ws.Cells(i, 2).Value
             
            'If Condition to see Date Format
              If Len(originalDate) = 8 And IsNumeric(originalDate) Then
